@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa's Elf Sign Up Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=PT+Serif&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1A3027;
+            color: whitesmoke;
+        }
+        h5, h6 {
+            font-family: 'DM Sans', sans-serif;
+        }
+        h1, p, label, input::placeholder, select, .btn {
+            font-family: 'PT Serif', serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-5 pb-1">
+        <h6 style="letter-spacing: 5px;" class="text-warning">PSHS - NPC (NORTH POLE CAMPUS)</h6>
+        <div class="row">
+            <div class="col-sm-9 pe-5">
+                <h1>Santa's Little Elves</h1>
+                <h4 class="mb-3">All the world is happy when Santa Claus comes. Help Santa bring joy to the children by signing up to be his elf.</h4>
+                <form action="http://sirjm.infinityfreeapp.com/aa1receiver.php" method="get">
+                    <div class="row">
+                        <div class="mb-3">
+                            <label for="studentName" class="form-label">Student Name</label>
+                            <input type="text" class="form-control" id="studentName" name="studname" placeholder="e.g. Gwyn Busyplum">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailAdd" class="form-label">Email Address</label>
+                            <input type="text" class="form-control" id="emailAdd" name="emailadd" placeholder="e.g. gbusyplum2026@npc.pshs.edu.ph">
+                        </div>
+                        <div class="mb-2">
+                            <p class="form-control-text d-inline me-3">Biological Sex: </p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="biosex" id="bioSexM" value="Male">
+                                <label class="form-check-label" for="bioSexM">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="biosex" id="bioSexF" value="Female">
+                                <label class="form-check-label" for="bioSexF">Female</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <p class="form-label">Incoming Grade Level: </p>
+                            <select id="gradeLvl" class="form-select" name="gradelevel" required>
+                                <option value="" disabled selected>Click here</option>
+                                <option value="7">Grade 7</option>
+                                <option value="8">Grade 8</option>
+                                <option value="9">Grade 9</option>
+                                <option value="10">Grade 10</option>
+                                <option value="11">Grade 11</option>
+                                <option value="12">Grade 12</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <p class="form-label">Reason/s for Joining:</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="reason1" name="reason[]" value="Goodness of Heart">
+                                <label class="form-check-label" for="reason1">I want to help children all around the globe.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="reason2" name="reason[]" value="Friends">
+                                <label class="form-check-label" for="reason2">I heard about the club from my friends and I want to bond with them.</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="reason3" name="reason[]" value="No Other Clubs">
+                                <label class="form-check-label" for="reason3">All of the other clubs were boring.</label>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="submit" value="Submit" class="btn btn-lg btn-warning me-2">
+                            <input type="reset" value="Clear Form" class="btn btn-lg btn-secondary">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-3">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="pictures/picture1.jpg" alt="Christmas image">
+                    <div class="card-body d-flex justify-content-between">
+                        <div class="my-auto">
+                            <p class="card-text d-inline">Image from: <a href="https://i.pinimg.com/564x/fa/52/ac/fa52ac22e28cc5bfd67d1c1285a69f12.jpg">Pinterest</a></p>
+                        </div>
+                        <button class="btn btn-success">More about us!</button>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <img class="card-img-top" src="pictures/picture2.jpg" alt="Christmas image">
+                    <div class="card-body d-flex justify-content-between">
+                        <div class="my-auto">
+                            <p class="card-text d-inline">Image from: <a href="https://cdn.autonomous.ai/static/upload/images/common/upload/20211211/Best-Aesthetic-Christmas-Wallpapers-Backgrounds_26728318e98.jpg">Autonomous</a></p>
+                        </div>
+                        <button class="btn btn-success">Email us!</button>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <p>(c) Pangilinan, Tanay, Bugarin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
